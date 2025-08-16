@@ -1,0 +1,56 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// EnTC A1
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Car
+{    
+public:
+    string name;
+    string year;
+};
+    
+int main() {
+    Car c1, c2, c3;
+
+    cout << "Enter the Brand name of Car 1: ";
+    cin >> c1.name;
+    cout << "Enter the Year Car 1 was released: ";
+    cin >> c1.year;
+
+    cout << "Enter the Brand name of Car 2: ";
+    cin >> c2.name;
+    cout << "Enter the Year Car 2 was released: ";
+    cin >> c2.year;
+
+    cout << "Enter the Brand name of Car 3: ";
+    cin >> c3.name;
+    cout << "Enter the Year Car 3 was released: ";
+    cin >> c3.year;
+
+    cout << "\nYou Entered: \n";
+    cout << "Car 1: " << c1.name << ", Year: " << c1.year << "\n";
+    cout << "Car 2: " << c2.name << ", Year: " << c2.year << "\n";
+    cout << "Car 3: " << c3.name << ", Year: " << c3.year << "\n";
+
+    return 0;
+}
+
+/* OUTPUT 
+Enter the Brand name of Car 1: Toyota
+Enter the Year Car 1 was released: 1798
+Enter the Brand name of Car 2: Ford
+Enter the Year Car 2 was released: 1478
+Enter the Brand name of Car 3: Honda1234
+Enter the Year Car 3 was released: 1234
+
+You Entered: 
+Car 1: Toyota, Year: 1798
+Car 2: Ford, Year: 1478
+Car 3: Honda1234, Year: 1234
+
+
+*/
