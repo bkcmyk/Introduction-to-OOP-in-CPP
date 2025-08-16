@@ -1,0 +1,39 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// EnTC A1
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    float length, width;
+    
+    float area(float length, float width) { 
+        if (length != width) {
+            return length * width;
+        } else {
+            cout << "Length and width are equal, it's a square.\n";
+            return length * width;
+        }
+    }
+};
+
+int main() {
+    Rectangle r1;
+    
+    cout << "Enter the length: ";
+    cin >> r1.length;
+    cout << "Enter the width: ";
+    cin >> r1.width;
+    
+    cout << "The Area is: " << r1.area(r1.length, r1.width);
+    
+    return 0;
+}
+
+/* OUTPUT 
+
+Enter the length: 5
+Enter the width: 3
+The Area is: 15*/
