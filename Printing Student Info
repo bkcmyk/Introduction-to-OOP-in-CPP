@@ -1,0 +1,59 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// EnTC A1
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student
+{
+public:
+    string name;
+    string branch, subject, year;
+    float result;
+};
+
+int main(){
+    Student s1;
+    s1.name="Barkha Kumari";
+    s1.branch="EnTC";
+    s1.subject="CDS";
+    s1.year="2nd Year";
+    s1.result=8.4;
+    
+    Student s2;
+    s2.name="Advika Bhosle";
+    s2.branch="EnTC";
+    s2.subject="CDS";
+    s2.year="2nd Year";
+    s2.result=8.4;
+    
+    cout<<s1.name<<endl;
+    cout<<s1.branch<<endl;
+    cout<<s1.subject<<endl;
+    cout<<s1.year<<endl;
+    cout<<s1.result<<endl;
+    
+    cout<<endl<<s2.name<<endl;
+    cout<<s2.branch<<endl;
+    cout<<s2.subject<<endl;
+    cout<<s2.year<<endl;
+    cout<<s2.result<<endl;
+   
+    return 0;
+}
+
+/* OUTPUT
+
+Barkha Kumari
+EnTC
+CDS
+2nd Year
+8.4
+
+Advika Bhosle
+EnTC
+CDS
+2nd Year
+8.4 */
