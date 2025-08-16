@@ -1,0 +1,35 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// EnTC A1
+
+#include <iostream>
+using namespace std;
+
+class Cube {
+public:
+    float side;
+
+    void calculateVolume();
+};
+
+// Function defined outside the class
+void Cube::calculateVolume() {
+    float volume = side * side * side;
+    cout << "The volume of the cube is: " << volume << endl;
+}
+
+int main() {
+    Cube c;
+    cout << "Enter the side length of the cube: ";
+    cin >> c.side;
+
+    c.calculateVolume();
+
+    return 0;
+}
+
+/* OUTPUT:
+
+Enter the side length of the cube: 5
+The volume of the cube is: 125
+*/
