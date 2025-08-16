@@ -1,0 +1,79 @@
+#include <iostream>
+using namespace std;
+
+class Calculator {
+public:
+    float num1, num2;
+
+    float sum(float a, float b) {
+        return a + b;
+    }
+
+    float difference(float a, float b) {
+        return a - b;
+    }
+
+    float product(float a, float b) {
+        return a * b;
+    }
+
+    float division(float a, float b) {
+        if (b != 0)
+            return a / b;
+        else {
+            cout << "Error: Division by zero!" << endl;
+            return 0;
+        }
+    }
+};
+
+int main() {
+    Calculator calc;
+    int choice;
+    float sum,difference,product,division;
+
+    cout << "Enter first number: ";
+    cin >> calc.num1;
+    cout << "Enter second number: ";
+    cin >> calc.num2;
+
+    cout << "\nSelect operation:\n";
+    cout << "1. Sum\n2. Difference\n3. Product\n4. Division\n";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            sum=calc.sum(calc.num1, calc.num2);
+            cout << "Result: " <<sum  << endl;
+            break;
+        case 2:
+            difference=calc.difference(calc.num1, calc.num2) ;
+            cout << "Result: " <<difference<< endl;
+            break;
+        case 3:
+            product=calc.product(calc.num1, calc.num2) ;
+            cout << "Result: " <<product<< endl;
+            break;
+        case 4:
+            division=calc.division(calc.num1, calc.num2) ;
+            cout << "Result: " << division<< endl;
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+    }
+
+    return 0;
+}
+
+
+/* OUTPUT 
+Enter first number: 5
+Enter second number: 4
+
+Select operation:
+1. Sum
+2. Difference
+3. Product
+4. Division
+3
+Result: 20 */
